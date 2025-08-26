@@ -1,0 +1,142 @@
+Authentication 
+
+Authentication is the process of verifying the identity of a user, system, or entity before granting access to resources.
+Think of it as answering the question:
+👉 “Who are you?”
+
+2. Authentication vs Authorization
+
+Authentication = proving who you are
+
+Authorization = deciding what you’re allowed to do after authentication
+
+Example:
+
+Logging into Gmail → Authentication
+
+Accessing your inbox but not others’ → Authorization
+
+Factors of Authentication
+
+Authentication methods are categorized by factors:
+
+Something you know → password, PIN, security questions
+
+Something you have → smart card, OTP token, phone, API key
+
+Something you are → biometrics like fingerprint, face ID, voice recognition
+
+Somewhere you are → location-based (IP/geolocation checks)
+
+Something you do → behavioral patterns (typing speed, gestures)
+
+Multi-Factor Authentication (MFA) combines two or more factors (e.g., password + OTP).--
+
+ Types of Authentication Methods
+
+Password-Based Authentication
+
+Oldest and most common
+
+Weak if users choose bad passwords or reuse them
+
+Multi-Factor Authentication (MFA)
+
+Stronger security by requiring multiple factors
+
+Example: Online banking (password + SMS OTP + fingerprint)
+
+Token-Based Authentication
+
+Uses tokens (e.g., JWTs, OAuth tokens) instead of passwords after initial login
+
+Common in APIs and microservices
+
+Biometric Authentication
+
+Fingerprint, facial recognition, iris scans
+
+High security but raises privacy concerns
+
+Certificate-Based Authentication
+
+Uses digital certificates (PKI)
+
+Strong, used in enterprise/VPNs
+
+Single Sign-On (SSO)
+
+One set of credentials grants access to multiple systems
+
+Example: Google login for YouTube, Gmail, Drive
+
+5. Authentication Protocols
+
+Basic Authentication
+
+Username/password sent with every request (insecure if not encrypted with HTTPS)
+
+Digest Authentication
+
+Uses hashing to improve Basic Auth, but still outdated
+
+OAuth 2.0
+
+Delegated authentication for APIs (e.g., “Login with Google”)
+
+SAML (Security Assertion Markup Language)
+
+XML-based, widely used in enterprise SSO
+
+OpenID Connect (OIDC)
+
+Built on OAuth 2.0, adds identity verification
+
+Kerberos
+
+Ticket-based system, common in enterprise (Windows Active Directory)
+
+6. Authentication Lifecycle
+
+Registration → User creates identity (username, email, password, etc.)
+
+Login → User submits credentials
+
+Verification → System checks credentials against stored data
+
+Session creation → System issues token/session cookie
+
+Re-authentication (for sensitive actions like money transfers)
+
+7. Modern Authentication Trends
+
+Passwordless authentication (magic links, passkeys, biometrics)
+
+Continuous authentication (monitoring user behavior during session)
+
+Decentralized identity (self-sovereign IDs, blockchain-based auth)
+
+8. Common Attacks on Authentication
+
+Phishing → tricking users into revealing credentials
+
+Brute-force → guessing passwords via automation
+
+Credential stuffing → using leaked passwords from other sites
+
+Man-in-the-Middle (MitM) → intercepting login traffic
+
+Session hijacking → stealing authentication tokens
+
+Defenses: MFA, rate limiting, CAPTCHA, strong password policies, encrypted traffic (TLS), token expiration, anomaly detection
+
+
+
+
+
+
+
+assignment:zero-trust Passwordless authetication  system (expert)
+desc:otp or magic link
+twilo(otp)/email,flask,
+dasgboard -product list and product detail page
